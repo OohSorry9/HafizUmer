@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins&family=Press+Start+2P&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(assets/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, .8);
+    height:  100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    font-size: 20px;
+    color: white;
+    list-style-type: none;
+    padding: 20px;
+    letter-spacing: 2px;
+        transition: all .7s ease;
+}
+nav ul a {
+    text-decoration: none;
+    transition: all .7s ease;
+
+}
+nav ul li:hover{
+    color: red;
+}
+
+nav .pfp {
+    width: 100px;
+    height: 90px;
+}
+nav .pfp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+
+main{
+    display: flex;
+    height: 750px;
+    width: 100vw;
+}
+
+/* main .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .left .text {
+
+    padding: 20px;
+    align-self: flex-end;
+    margin: 50px 0 50px 50px
+} */
+
+main .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+main .wrapper .text {
+    padding: 20px;
+    align-self: center;
+    margin: 50px 0 50px 50px;
+}
+
+main .wrapper .image{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .wrapper .image img{
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+    object-position: center;
+    object-fit: cover;
+}
+.greet {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name{
+    font-size: 50px;
+}
+.name .red {
+    color: red;
+    font-weight: bolder;
+}
+.text .hire {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: darkred;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+
+.text .hire:hover{
+    background-color: rgba(255, 0, 0, .6)
+}
+
+
+main .right {
+    flex: .75;
+    background-image: url(assets/DORUAA.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+
+
+}
+
+.gap{
+    background-color: black;
+    height: 200px;
+}
+
+.portfolio{
+    background-image: url(assets/bg-mobile.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+
+.portfolio .sec-heading{
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px;
+}
+
+.portfolio .hobbies {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.hobbies .card {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    margin: 20px 30px;
+    padding:  20px;
+    width: 300px;
+    height: 300px;;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    
+}
+
+.hobbies .card .card-heading {
+
+    font-size:35px;
+}
+.hobbies .card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: 5px;
+
+    border: 2px solid white;;
+}
+
+.skills{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, .02);
+    border-radius: 25px;
+    box-shadow: 20px 25px 50px rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    border: 2px solid white;
+    flex-direction: column;
+    gap: 40px;
+}
+.underline {
+    border-bottom: 2px solid red;
+}
+
+.skills ul li {
+    font-size: 30px;
+    line-height: 2;
+    list-style-type: square;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.description{
+
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials .social-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.socials .social-box i {
+    font-size: 40px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: all .4s ease;
+
+    
+}
+
+.socials .social-box .insta {
+    background-color: rgb(102, 6, 89);
+}
+
+.socials .social-box .facebook {
+    background-color: blue;
+}
+
+.socials .social-box .whatsapp{
+    background-color: #25D366;
+}
+
+
+.socials .social-box .insta:hover {
+    background-color: rgb(187, 17, 164);
+    color: black;
+}
+
+.socials .social-box .facebook:hover {
+    background-color: dodgerblue;
+    color: black
+}
+
+.socials .social-box .whatsapp:hover{
+    background-color: #1a9246;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.overlay{
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.subHeading {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#ShowCase {
+    background-repeat: round;
+}
